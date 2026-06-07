@@ -168,10 +168,7 @@ const modalClose   = document.getElementById('modalClose');
 const htModals = {
   pre1: {
     title: 'Freelance Jobs',
-    period: '2561 – 2565 (ม.4 – ปี 1)',
-    images: [
-      { src: 'freelance-1.jpg', caption: 'ผลงาน Graphic Design' }
-    ],
+    period: '<span class="th-inline">2561 – 2565 (ม.4 – ปี 1)</span><span class="en-inline">2018 – 2022 (Grade 10 – Year 1)</span>',
     content: `
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="display:flex;align-items:center;gap:10px">
@@ -181,19 +178,24 @@ const htModals = {
         <ul style="display:flex;flex-direction:column;gap:10px;list-style:none;padding:0">
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            เปิดเพจใน <strong style="color:#fff">Instagram</strong> เพื่อหาลูกค้า และทำการตลาดด้วยตัวเอง
+            <span class="th-inline">เปิดเพจใน <strong style="color:#fff">Instagram</strong> เพื่อหาลูกค้า และทำการตลาดด้วยตัวเอง</span>
+            <span class="en-inline">Launched an <strong style="color:#fff">Instagram</strong> page to attract clients and self-managed all marketing.</span>
           </li>
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            เริ่มต้นจากการรับทำ<strong style="color:#fff">งานเอกสาร</strong>ที่ต้องใช้คอมพิวเตอร์ ช่วงนั้นยืมโน๊ตบุ๊คของคุณป้าเพื่อทำงานพิเศษ
+            <span class="th-inline">เริ่มต้นจากการรับทำ<strong style="color:#fff">งานเอกสาร</strong>ที่ต้องใช้คอมพิวเตอร์ ช่วงนั้นยืมโน๊ตบุ๊คของคุณป้าเพื่อทำงานพิเศษ</span>
+            <span class="en-inline">Started with <strong style="color:#fff">document work</strong> requiring a computer — used a relative's laptop to take on freelance jobs.</span>
           </li>
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            เมื่อ <strong style="color:#fff">Canva เปิดตัว</strong> ก็เริ่มรับงาน Graphic Design เพิ่มขึ้น
+            <span class="th-inline">เมื่อ <strong style="color:#fff">Canva เปิดตัว</strong> ก็เริ่มรับงาน Graphic Design เพิ่มขึ้น</span>
+            <span class="en-inline">When <strong style="color:#fff">Canva launched</strong>, expanded into Graphic Design work.</span>
           </li>
         </ul>
         <div style="margin-top:8px">
-          <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:10px">ภาพผลงาน — คลิกเพื่อขยาย</p>
+          <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:10px">
+            <span class="th-inline">ภาพผลงาน — คลิกเพื่อขยาย</span><span class="en-inline">Portfolio — Click to Enlarge</span>
+          </p>
           <div class="modal-gallery">
             <img src="freelance-ig.jpg" alt="Shouldme.plss Instagram" class="gallery-thumb" onclick="openLightbox(this)" onerror="this.parentElement.innerHTML='<div style=\\'background:rgba(255,255,255,.06);border:1px dashed rgba(255,255,255,.15);border-radius:10px;padding:30px;text-align:center;font-size:.78rem;color:rgba(255,255,255,.3)\\'>[ รูปผลงาน — จะแนบภายหลัง ]</div>'"/>
           </div>
@@ -203,29 +205,34 @@ const htModals = {
   },
   pre2: {
     title: 'Graphic Designer',
-    period: '2565 – ปัจจุบัน',
+    period: '<span class="th-inline">2565 – ปัจจุบัน</span><span class="en-inline">2022 – Present</span>',
     content: `
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <span style="background:rgba(37,99,235,.15);color:#60a5fa;padding:3px 12px;border-radius:50px;font-size:.72rem;font-weight:700;letter-spacing:.06em">FREELANCE PART-TIME</span>
-          <span style="font-size:.85rem;color:rgba(255,255,255,.55)">Gelate · บริษัท หวานเย็นสากล จำกัด</span>
+          <span style="font-size:.85rem;color:rgba(255,255,255,.55)">Gelate · <span class="th-inline">บริษัท หวานเย็นสากล จำกัด</span><span class="en-inline">Waan Yen Sakon Co., Ltd.</span></span>
         </div>
         <ul style="display:flex;flex-direction:column;gap:10px;list-style:none;padding:0">
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            ดูแล <strong style="color:#fff">Artwork</strong> ทั้งหมดตามความต้องการของร้าน Gelate
+            <span class="th-inline">ดูแล <strong style="color:#fff">Artwork</strong> ทั้งหมดตามความต้องการของร้าน Gelate</span>
+            <span class="en-inline">Managed all <strong style="color:#fff">Artwork</strong> production based on Gelate's requirements.</span>
           </li>
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            งาน <strong style="color:#fff">Media Advertising</strong> — โฆษณาบน Social Media ทุก Campaign
+            <span class="th-inline">งาน <strong style="color:#fff">Media Advertising</strong> — โฆษณาบน Social Media ทุก Campaign</span>
+            <span class="en-inline"><strong style="color:#fff">Media Advertising</strong> — produced social media advertising for every campaign.</span>
           </li>
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            งาน <strong style="color:#fff">Brand Signs & Materials</strong> — ป้ายร้าน, Sticker Label, Cone Wrap, Cup Wrap, Packaging
+            <span class="th-inline">งาน <strong style="color:#fff">Brand Signs &amp; Materials</strong> — ป้ายร้าน, Sticker Label, Cone Wrap, Cup Wrap, Packaging</span>
+            <span class="en-inline"><strong style="color:#fff">Brand Signs &amp; Materials</strong> — store signage, sticker labels, cone wraps, cup wraps, and packaging.</span>
           </li>
         </ul>
         <div style="margin-top:4px">
-          <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px">ผลงาน — คลิกรูปเพื่อขยาย</p>
+          <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px">
+            <span class="th-inline">ผลงาน — คลิกรูปเพื่อขยาย</span><span class="en-inline">Portfolio — Click to Enlarge</span>
+          </p>
           <div class="gallery-slideshow" id="gelate-gallery">
             <div class="gs-track" id="gelate-track">
               <img src="gelate-3.png" class="gs-img" onclick="openLightbox(this)" alt="Gelate Brand Signs & Materials"/>
@@ -244,29 +251,33 @@ const htModals = {
   },
   pre3: {
     title: 'Admin & Content Creator',
-    period: '2565 – ปัจจุบัน',
+    period: '<span class="th-inline">2565 – ปัจจุบัน</span><span class="en-inline">2022 – Present</span>',
     content: `
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <span style="background:rgba(37,99,235,.15);color:#60a5fa;padding:3px 12px;border-radius:50px;font-size:.72rem;font-weight:700;letter-spacing:.06em">PART-TIME</span>
-          <span style="font-size:.85rem;color:rgba(255,255,255,.55)">Gelate · ร้านโปรเต้ (ร้านสัตว์เลี้ยง)</span>
+          <span style="font-size:.85rem;color:rgba(255,255,255,.55)">Gelate · <span class="th-inline">ร้านโปรเต้ (ร้านสัตว์เลี้ยง)</span><span class="en-inline">Pro-Te Pet Shop</span></span>
         </div>
         <ul style="display:flex;flex-direction:column;gap:10px;list-style:none;padding:0">
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            ดูแล <strong style="color:#fff">เพจ Social Media</strong> ของร้าน Gelate และร้านโปรเต้
+            <span class="th-inline">ดูแล <strong style="color:#fff">เพจ Social Media</strong> ของร้าน Gelate และร้านโปรเต้</span>
+            <span class="en-inline">Managed <strong style="color:#fff">Social Media pages</strong> for Gelate and Pro-Te Pet Shop.</span>
           </li>
           <li style="font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.6;padding-left:16px;position:relative">
             <span style="position:absolute;left:0;color:#60a5fa">·</span>
-            <strong style="color:#fff">คิด Content</strong> และออกแบบรูปภาพลงในช่องทางโซเชียลมีเดีย
+            <span class="th-inline"><strong style="color:#fff">คิด Content</strong> และออกแบบรูปภาพลงในช่องทางโซเชียลมีเดีย</span>
+            <span class="en-inline"><strong style="color:#fff">Created content strategies</strong> and designed visual assets for social media channels.</span>
           </li>
         </ul>
         <div style="margin-top:4px">
-          <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px">ผลงาน — คลิกรูปเพื่อขยาย</p>
+          <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px">
+            <span class="th-inline">ผลงาน — คลิกรูปเพื่อขยาย</span><span class="en-inline">Portfolio — Click to Enlarge</span>
+          </p>
           <div class="gallery-slideshow">
             <div class="gs-track" id="content-track">
               <img src="content-1.png" class="gs-img" onclick="openLightbox(this)" alt="Content Gelate"/>
-              <img src="content-2.png" class="gs-img" onclick="openLightbox(this)" alt="Content โปรเต้"/>
+              <img src="content-2.png" class="gs-img" onclick="openLightbox(this)" alt="Content Pro-Te"/>
             </div>
             <div class="gs-controls">
               <button class="gs-btn" onclick="slideGallery('content-track',-1)">‹</button>
