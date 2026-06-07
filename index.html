@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" data-lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujittra Pankaraket — Product Delivery</title>
+  <title>Sujittra Pankaraket — Professional Experience</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet" />
@@ -21,6 +21,7 @@
       <li><a href="#career">Experience</a></li>
     </ul>
     <a class="btn btn-nav-contact" href="#contact">Contact</a>
+    <button class="btn btn-lang" id="langToggle" onclick="toggleLang()">EN</button>
   </div>
 </nav>
 
@@ -44,19 +45,14 @@
         <span class="word-mask"><span class="word-inner" style="--wi:6">matters."</span></span>
       </span>
     </h1>
-    <img src="1moby-logo.png" alt="1Moby" class="hero-1moby-logo hero-after-reveal"/>
     <div class="hero-cta hero-after-reveal">
-      <a class="btn btn-glow" href="#career">ดูประวัติการทำงาน</a>
-      <a class="btn btn-ghost" href="#about">เกี่ยวกับฉัน</a>
+      <a class="btn btn-glow" href="#career"><span class="th-inline">ดูประวัติการทำงาน</span><span class="en-inline">View Experience</span></a>
+      <a class="btn btn-ghost" href="#about"><span class="th-inline">เกี่ยวกับฉัน</span><span class="en-inline">About Me</span></a>
     </div>
   </div>
 
   <!-- Floating cards -->
   <div class="hero-cards-dark hero-after-reveal">
-    <div class="floating-card-dark">
-      <div class="fc-label">Position Applied for</div>
-      <div class="fc-val fc-glow">Product Delivery</div>
-    </div>
     <div class="floating-card-dark">
       <div class="fc-label">Current Role</div>
       <div class="fc-val">Business Analyst &amp; UX/UI Designer</div>
@@ -90,9 +86,12 @@
       </div>
       <div class="about-bio-col">
         <div class="about-section-label">About Me</div>
-        <p class="about-bio">Business Analyst &amp; UX/UI Designer who owns product delivery end-to-end. As the sole BA across multiple concurrent enterprise projects, I cover all three roles — Business Analyst, Tester, and UX/UI Designer — from requirements gathering and SDLC documentation (ISO 29110) to coordinating with developers, testing the system myself, and driving it through to go-live.</p>
-        <p class="about-bio" style="margin-top:10px">My main project is an agricultural commodity trading platform integrating SAP B1 and the UOB Payment Gateway, where I break work into module-level tasks, track timelines and dependencies, manage change requests and defects across SIT/UAT cycles, lead UAT with clients, and keep stakeholders aligned to deliver on schedule.</p>
-        <p class="about-bio" style="margin-top:10px">I work best in fast-paced Agile/Scrum environments — proactive in unblocking the team, clear in communication, and driven by a strong ownership mindset.</p>
+        <p class="about-bio th">Business Analyst &amp; UX/UI Designer who owns product delivery end-to-end. As the sole BA across multiple concurrent enterprise projects, I cover all three roles — Business Analyst, Tester, and UX/UI Designer — from requirements gathering and SDLC documentation (ISO 29110) to coordinating with developers, testing the system myself, and driving it through to go-live.</p>
+        <p class="about-bio en">Business Analyst &amp; UX/UI Designer with end-to-end product delivery ownership. As the sole BA across multiple concurrent enterprise projects, I cover three roles — Business Analyst, Tester, and UX/UI Designer — from requirements gathering and SDLC documentation (ISO 29110) to coordinating with developers, testing the system, and driving it through to go-live.</p>
+        <p class="about-bio th" style="margin-top:10px">My main project is an agricultural commodity trading platform integrating SAP B1 and the UOB Payment Gateway, where I break work into module-level tasks, track timelines and dependencies, manage change requests and defects across SIT/UAT cycles, lead UAT with clients, and keep stakeholders aligned to deliver on schedule.</p>
+        <p class="about-bio en" style="margin-top:10px">My main project is an agricultural commodity trading platform integrating SAP B1 and the UOB Payment Gateway. I break work into module-level tasks, track timelines and dependencies, manage change requests and defects across SIT/UAT cycles, lead UAT with clients, and keep stakeholders aligned to deliver on schedule.</p>
+        <p class="about-bio th" style="margin-top:10px">I work best in fast-paced Agile/Scrum environments — proactive in unblocking the team, clear in communication, and driven by a strong ownership mindset.</p>
+        <p class="about-bio en" style="margin-top:10px">I thrive in fast-paced Agile/Scrum environments — proactive in unblocking the team, clear in communication, and driven by a strong ownership mindset.</p>
       </div>
     </div>
 
@@ -163,13 +162,13 @@
 <section class="section section-dark" id="career">
   <div class="container">
     <div class="section-label light">Session 02</div>
-    <h2 class="section-title light">ประวัติการทำงาน</h2>
+    <h2 class="section-title light"><span class="th-inline">ประวัติการทำงาน</span><span class="en-inline">Work Experience</span></h2>
 
     <!-- ── PRE‑GRAD: horizontal scroll timeline ── -->
     <div class="timeline-segment">
       <div class="ts-header">
-        <div class="ts-tag">ก่อนเรียนจบ</div>
-        <p class="ts-sub">ประสบการณ์ที่สะสมมาตั้งแต่ยังเรียนอยู่</p>
+        <div class="ts-tag"><span class="th-inline">ก่อนเรียนจบ</span><span class="en-inline">Pre-Graduation</span></div>
+        <p class="ts-sub"><span class="th-inline">ประสบการณ์ที่สะสมมาตั้งแต่ยังเรียนอยู่</span><span class="en-inline">Experience accumulated during academic years</span></p>
       </div>
       <div class="h-timeline-wrapper">
         <div class="h-timeline">
@@ -179,11 +178,11 @@
               <img src="dot-1.png" alt="" class="ht-dot-icon"/>
             </div>
             <div class="ht-card" data-modal="pre1">
-              <div class="ht-period">2561 – 2565 (ม.4 – ปี 1)</div>
+              <div class="ht-period"><span class="th-inline">2561 – 2565 (ม.4 – ปี 1)</span><span class="en-inline">2018–2022 (Grade 10 – Year 1)</span></div>
               <div class="ht-role">Freelance Jobs</div>
               <div class="ht-company">Instagram: @shouldme.plss</div>
-              <div class="ht-desc">เปิดเพจ IG หาลูกค้าเอง รับงานเอกสาร กราฟิก และ Design</div>
-              <div class="ht-more">คลิกเพื่อดูรายละเอียด →</div>
+              <div class="ht-desc"><span class="th-inline">เปิดเพจ IG หาลูกค้าเอง รับงานเอกสาร กราฟิก และ Design</span><span class="en-inline">Self-managed Instagram page for freelance document, graphic, and design work</span></div>
+              <div class="ht-more"><span class="th-inline">คลิกเพื่อดูรายละเอียด →</span><span class="en-inline">Click for details →</span></div>
             </div>
           </div>
 
@@ -195,8 +194,8 @@
               <div class="ht-period">2565 – ปัจจุบัน</div>
               <div class="ht-role">Graphic Designer</div>
               <div class="ht-company">Freelance Part-time · Gelate</div>
-              <div class="ht-desc">ดูแล Artwork ให้ร้าน Gelate (บริษัท หวานเย็นสากล จำกัด)</div>
-              <div class="ht-more">คลิกเพื่อดูรายละเอียด →</div>
+              <div class="ht-desc"><span class="th-inline">ดูแล Artwork ให้ร้าน Gelate (บริษัท หวานเย็นสากล จำกัด)</span><span class="en-inline">Managing artwork for Gelate (Waan Yen Sakon Co., Ltd.)</span></div>
+              <div class="ht-more"><span class="th-inline">คลิกเพื่อดูรายละเอียด →</span><span class="en-inline">Click for details →</span></div>
             </div>
           </div>
 
@@ -210,8 +209,8 @@
               <div class="ht-period">2565 – ปัจจุบัน</div>
               <div class="ht-role">Admin &amp; Content Creator</div>
               <div class="ht-company">Part-time · Gelate &amp; โปรเต้</div>
-              <div class="ht-desc">คิด Content และออกแบบรูปภาพลงโซเชียลมีเดีย</div>
-              <div class="ht-more">คลิกเพื่อดูรายละเอียด →</div>
+              <div class="ht-desc"><span class="th-inline">คิด Content และออกแบบรูปภาพลงโซเชียลมีเดีย</span><span class="en-inline">Creating and designing social media content for Gelate &amp; Pro-Te</span></div>
+              <div class="ht-more"><span class="th-inline">คลิกเพื่อดูรายละเอียด →</span><span class="en-inline">Click for details →</span></div>
             </div>
           </div>
 
@@ -222,8 +221,8 @@
     <!-- ── POST‑GRAD: vertical timeline ── -->
     <div class="timeline-segment mt-lg">
       <div class="ts-header">
-        <div class="ts-tag">ทำงานจริง</div>
-        <p class="ts-sub">ประสบการณ์วิชาชีพ ตั้งแต่ Apr 2024 – ปัจจุบัน</p>
+        <div class="ts-tag"><span class="th-inline">ทำงานจริง</span><span class="en-inline">Professional Experience</span></div>
+        <p class="ts-sub"><span class="th-inline">ประสบการณ์วิชาชีพ ตั้งแต่ Apr 2024 – ปัจจุบัน</span><span class="en-inline">Professional experience since Apr 2024 – Present</span></p>
       </div>
 
       <div class="v-timeline">
@@ -237,7 +236,7 @@
           <div class="vt-body">
             <div class="vt-header">
               <div class="vt-meta">
-                <div class="vt-period">Apr 2024 – Oct 2024 · 6 เดือน</div>
+                <div class="vt-period">Apr 2024 – Oct 2024 · <span class="th-inline">6 เดือน</span><span class="en-inline">6 months</span></div>
                 <div class="vt-role">Internship UX/UI Designer</div>
                 <div class="vt-company">Lucas Strategy Co., Ltd. <span style="font-size:.75rem;opacity:.6">(Software House)</span></div>
                 <div class="vt-badge badge-intern">สหกิจศึกษา</div>
@@ -246,40 +245,41 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
               </div>
             </div>
-            <div class="vt-summary">Internship UX/UI Designer ณ Lucas Strategy — ดูแลงานตั้งแต่ออกแบบระบบ, UX Research, Corporate Identity ไปจนถึงเว็บไซต์และสื่อสิ่งพิมพ์</div>
+            <div class="vt-summary th">Internship UX/UI Designer ณ Lucas Strategy — ดูแลงานตั้งแต่ออกแบบระบบ, UX Research, Corporate Identity ไปจนถึงเว็บไซต์และสื่อสิ่งพิมพ์</div>
+            <div class="vt-summary en">Internship UX/UI Designer at Lucas Strategy — covering system design, UX Research, Corporate Identity, website, and print media</div>
             <div class="vt-detail">
 
               <ul class="detail-list">
                 <li>
-                  <strong>ระบบจัดการสัญญาบำรุงรักษา (In-House · โปรเจคสหกิจ)</strong> — เก็บ Requirement จาก CEO, ออกแบบ Flow และ UI, จัดทำเอกสารวิจัยนำเสนอใน
-                  <a class="vt-link" href="https://share.google/x7H8CJ5sWUidhWKdA" target="_blank">วารสาร MITIJ ปีที่ 11 ↗</a>
+                  <strong>ระบบจัดการสัญญาบำรุงรักษา (In-House · โปรเจคสหกิจ)</strong><span class="th-inline"> — เก็บ Requirement จาก CEO, ออกแบบ Flow และ UI, จัดทำเอกสารวิจัยนำเสนอใน
+                  <a class="vt-link" href="https://share.google/x7H8CJ5sWUidhWKdA" target="_blank">วารสาร MITIJ ปีที่ 11 ↗</a></span><span class="en-inline"> — Gathered requirements from CEO, designed flow and UI, prepared research paper published in <a class="vt-link" href="https://share.google/x7H8CJ5sWUidhWKdA" target="_blank">MITIJ Journal Vol. 11 ↗</a></span>
                 </li>
                 <li>
-                  <strong>แพลตฟอร์มโรงพยาบาลสัตว์เลี้ยง (In-House Product)</strong> — ออกแบบ Logo, Corporate Identity, UI Design และทำ UX Research เพื่อสร้าง User Story และแยก Epic Story List แบบ Agile
+                  <strong>แพลตฟอร์มโรงพยาบาลสัตว์เลี้ยง (In-House Product)</strong><span class="th-inline"> — ออกแบบ Logo, Corporate Identity, UI Design และทำ UX Research เพื่อสร้าง User Story และแยก Epic Story List แบบ Agile</span><span class="en-inline"> — Designed logo, corporate identity, UI, and conducted UX Research to create User Stories and Agile Epic Story List</span>
                 </li>
                 <li>
-                  <strong>เว็บไซต์บริษัท</strong> — ออกแบบและถ่ายภาพ รวมถึงจัดทำเนื้อหา
-                  <a class="vt-link" href="https://www.ls.co.th/" target="_blank">ls.co.th ↗</a>
+                  <strong>เว็บไซต์บริษัท</strong><span class="th-inline"> — ออกแบบและถ่ายภาพ รวมถึงจัดทำเนื้อหา
+                  <a class="vt-link" href="https://www.ls.co.th/" target="_blank">ls.co.th ↗</a></span><span class="en-inline"> — Designed and photographed content for <a class="vt-link" href="https://www.ls.co.th/" target="_blank">ls.co.th ↗</a></span>
                 </li>
                 <li>
-                  <strong>เว็บไซต์ลูกค้า</strong> — ออกแบบและประสานงานกับลูกค้าเพื่อแก้ไข (Support MA)
+                  <strong>เว็บไซต์ลูกค้า</strong><span class="th-inline"> — ออกแบบและประสานงานกับลูกค้าเพื่อแก้ไข (Support MA)</span><span class="en-inline"> — Designed and coordinated with clients for revisions (Support MA)</span>
                 </li>
                 <li>
-                  <strong>Graphic Design</strong> — เก็บ Requirement และพรีเซนต์ผลงานกับลูกค้าด้วยตนเอง
+                  <strong>Graphic Design</strong><span class="th-inline"> — เก็บ Requirement และพรีเซนต์ผลงานกับลูกค้าด้วยตนเอง</span><span class="en-inline"> — Gathered requirements and presented work directly to clients</span>
                 </li>
                 <li>
-                  <strong>เสื้อ &amp; บรรจุภัณฑ์</strong> — ออกแบบเสื้อ, แก้วน้ำ, กระเป๋าผ้าของบริษัท
+                  <strong>เสื้อ &amp; บรรจุภัณฑ์</strong><span class="th-inline"> — ออกแบบเสื้อ, แก้วน้ำ, กระเป๋าผ้าของบริษัท</span><span class="en-inline"> — Designed company t-shirts, water bottles, and tote bags</span>
                 </li>
               </ul>
 
               <!-- Folder album -->
               <div class="vt-album-section">
-                <div class="vt-album-label">ผลงานและกระบวนการทำงาน</div>
+                <div class="vt-album-label"><span class="th-inline">ผลงานและกระบวนการทำงาน</span><span class="en-inline">Work Portfolio &amp; Process</span></div>
                 <button class="folder-btn" onclick="openAlbum('ls-work')">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36">
                     <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
                   </svg>
-                  <span>กระบวนการทำงาน</span>
+                  <span><span class="th-inline">กระบวนการทำงาน</span><span class="en-inline">Work Process</span></span>
                 </button>
               </div>
 
@@ -296,7 +296,7 @@
           <div class="vt-body">
             <div class="vt-header">
               <div class="vt-meta">
-                <div class="vt-period">Jun 2568 – Oct 2568 · 4 เดือน</div>
+                <div class="vt-period">Jun 2568 – Oct 2568 · <span class="th-inline">4 เดือน</span><span class="en-inline">4 months</span></div>
                 <div class="vt-role">UX/UI Designer</div>
                 <div class="vt-company">Intelligence System Corporation Co., Ltd. <span style="font-size:.75rem;opacity:.6">(Enterprise Solutions Provider)</span></div>
                 <div class="vt-badge badge-full">Full Time</div>
@@ -305,21 +305,22 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
               </div>
             </div>
-            <div class="vt-summary">เริ่มงานในตำแหน่ง UX/UI Designer และขยายบทบาทสู่ Business Analyst, Consultant และ Pre-sales ภายใน 4 เดือนแรก</div>
+            <div class="vt-summary th">เริ่มงานในตำแหน่ง UX/UI Designer และขยายบทบาทสู่ Business Analyst, Consultant และ Pre-sales ภายใน 4 เดือนแรก</div>
+            <div class="vt-summary en">Started as UX/UI Designer and expanded into Business Analyst, Consultant, and Pre-sales roles within the first 4 months</div>
             <div class="vt-detail">
               <ul class="detail-list">
-                <li>ออกแบบ UI ร่วมกับทีม พร้อมขยายบทบาทสู่งาน <strong>Business Analyst</strong> และ <strong>Consultant</strong> ในการเก็บ Requirement</li>
-                <li>รับหน้าที่จัดตั้งบูธใน <strong>Showcase ของพาร์ทเนอร์</strong> และ Consult ลูกค้าที่เข้าเยี่ยมชมโดยตรง</li>
-                <li>นำเสนอ <strong>Warehouse Management System (WMS)</strong> และ <strong>Warehouse Control System (WCS)</strong> ทั้งรูปแบบ Manual, Semi-Automation และ Automation ร่วมกับพาร์ทเนอร์</li>
-                <li>จัดทำ <strong>สื่อการขาย (Pre-sales)</strong> และ Presentation สำหรับผู้บริหาร</li>
+                <li><span class="th-inline">ออกแบบ UI ร่วมกับทีม พร้อมขยายบทบาทสู่งาน <strong>Business Analyst</strong> และ <strong>Consultant</strong> ในการเก็บ Requirement</span><span class="en-inline">Designed UI with the team while expanding into <strong>Business Analyst</strong> and <strong>Consultant</strong> roles for requirements gathering</span></li>
+                <li><span class="th-inline">รับหน้าที่จัดตั้งบูธใน <strong>Showcase ของพาร์ทเนอร์</strong> และ Consult ลูกค้าที่เข้าเยี่ยมชมโดยตรง</span><span class="en-inline">Managed booth setup at a <strong>Partner Showcase</strong> and directly consulted visiting clients</span></li>
+                <li><span class="th-inline">นำเสนอ <strong>Warehouse Management System (WMS)</strong> และ <strong>Warehouse Control System (WCS)</strong> ทั้งรูปแบบ Manual, Semi-Automation และ Automation ร่วมกับพาร์ทเนอร์</span><span class="en-inline">Presented <strong>Warehouse Management System (WMS)</strong> and <strong>Warehouse Control System (WCS)</strong> — Manual, Semi-Automation, and Full Automation — with partners</span></li>
+                <li><span class="th-inline">จัดทำ <strong>สื่อการขาย (Pre-sales)</strong> และ Presentation สำหรับผู้บริหาร</span><span class="en-inline">Created <strong>pre-sales materials</strong> and executive presentations</span></li>
               </ul>
               <div class="vt-album-section" style="margin-top:20px">
-                <div class="vt-album-label">ผลงานและกระบวนการทำงาน</div>
+                <div class="vt-album-label"><span class="th-inline">ผลงานและกระบวนการทำงาน</span><span class="en-inline">Work Portfolio &amp; Process</span></div>
                 <button class="folder-btn" onclick="openAlbum('insysc-ux-work')">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36">
                     <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
                   </svg>
-                  <span>กระบวนการทำงาน</span>
+                  <span><span class="th-inline">กระบวนการทำงาน</span><span class="en-inline">Work Process</span></span>
                 </button>
               </div>
             </div>
@@ -344,7 +345,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
               </div>
             </div>
-            <div class="vt-summary">ได้รับการโปรโมทเป็น Business Analyst หลังผ่านการทดลองงาน — ดูแลระบบซื้อขายผลผลิตทางการเกษตร End-to-End ในฐานะ BA หลัก ตั้งแต่ Jun 2568</div>
+            <div class="vt-summary th">ได้รับการโปรโมทเป็น Business Analyst หลังผ่านการทดลองงาน — ดูแลระบบซื้อขายผลผลิตทางการเกษตร End-to-End ในฐานะ BA หลัก ตั้งแต่ Jun 2568</div>
+            <div class="vt-summary en">Promoted to Business Analyst after probation — leading an agricultural trading system end-to-end as the primary BA since Jun 2568</div>
             <div class="vt-promo-badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
               Promoted from UX/UI Designer · Oct 2568
@@ -363,6 +365,25 @@
                   <div class="ps-badge">Main Project</div>
                 </div>
 
+                <!-- Project Description -->
+                <div class="ps-desc-block">
+                  <p class="ps-desc-text">
+                    <span class="th-inline">ระบบซื้อขายผลผลิตทางการเกษตรแบบครบวงจร สำหรับโรงงานแปรรูปปาล์มน้ำมัน รองรับการซื้อขายผลผลิต (CPO, เมล็ดใน, เส้นใย และเปลือก) โดยเชื่อมต่อระบบชั่งน้ำหนักกับ POS และ SAP</span>
+                    <span class="en-inline">Led business analysis and documentation for an integrated weighbridge and point-of-sale system for a palm oil processing client, supporting agricultural produce trading operations (CPO, kernel, fiber, and shell products).</span>
+                  </p>
+                  <div class="ps-desc-label">Key Contributions</div>
+                  <ul class="ps-contrib-list">
+                    <li><span class="th-inline">ออกแบบและจัดทำเอกสาร End-to-End Transaction Flow เชื่อม POS/ระบบชั่งน้ำหนักเข้ากับ SAP ครอบคลุมการซื้อขายตามสัญญา เอกสารบัญชี และการจัดการสต็อก</span><span class="en-inline">Designed and documented the end-to-end transaction flow integrating the POS/weighbridge system with SAP, covering contract-based trading, accounting documents, and stock management.</span></li>
+                    <li><span class="th-inline">ออกแบบ flow การซื้อผลผลิตจากเกษตรกรและการขายสินค้าผ่านการเชื่อมต่อ SAP ตั้งแต่รับ Sale Contract/Sale Order ไปจนถึงชั่งน้ำหนักและออก Delivery Order / Sale Invoice</span><span class="en-inline">Designed the produce procurement and sales flow via SAP integration, from receiving Sale Contract/Sale Order through weighing to issuing Delivery Order and Sale Invoice.</span></li>
+                    <li><span class="th-inline">ออกแบบโมดูล CRM สำหรับติดตามและบริหารความสัมพันธ์กับเกษตรกร เพื่อรักษาฐานซัพพลายเออร์สวนปาล์ม</span><span class="en-inline">Designed a CRM module for tracking and managing farmer relationships to retain the palm plantation supplier base.</span></li>
+                    <li><span class="th-inline">พัฒนาระบบบันทึกเวลาเข้า-ออกงานของพนักงาน พร้อมฟังก์ชันอนุมัติปิดกะ</span><span class="en-inline">Developed an employee time attendance system with shift-close approval functionality.</span></li>
+                    <li><span class="th-inline">ออกแบบระบบประเมินคุณภาพผลปาล์มที่เชื่อมกับ POS บันทึกผลประเมินเพื่อจัดเกรดรายสวน</span><span class="en-inline">Designed a palm fruit quality assessment system integrated with the POS, recording evaluation results to grade each plantation.</span></li>
+                    <li><span class="th-inline">ออกแบบระบบหลังบ้าน (Back-Office) พร้อมรายงานและ KPI Dashboard</span><span class="en-inline">Designed the back-office system with operational reporting and a KPI Dashboard.</span></li>
+                    <li><span class="th-inline">จัดทำ BRD และเอกสาร Requirements ตามมาตรฐาน SRS รวมถึง Swimlane, Process Flow และ Requirements Traceability Matrix สอดคล้องกับ ISO 29110 และ SDLC</span><span class="en-inline">Produced BRD and SRS-aligned requirements documentation, including swimlane diagrams, process flows, and a requirements traceability matrix in accordance with ISO 29110 and SDLC standards.</span></li>
+                    <li><span class="th-inline">บริหาร Change Request และสนับสนุน UAT 2 รอบจนถึง Go-Live</span><span class="en-inline">Managed change requests and supported two UAT rounds through to Go-Live.</span></li>
+                  </ul>
+                </div>
+
                 <!-- TMK Detailed Timeline -->
                 <div class="tmk-timeline">
 
@@ -370,10 +391,10 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">มิถุนายน 2568</div>
-                      <div class="tmkp-title">รับช่วงต่อเพื่อเริ่มต้นโปรเจกต์</div>
+                      <div class="tmkp-title"><span class="th-inline">รับช่วงต่อเพื่อเริ่มต้นโปรเจกต์</span><span class="en-inline">Project Takeover and Initiation</span></div>
                       <ul class="tmkp-list">
-                        <li>รับ Requirement ต่อจาก PM ผ่านไฟล์ TOR และ Internal Meeting ในช่วงที่ยังไม่มี BA</li>
-                        <li>เริ่มรับผิดชอบออกแบบระบบ (UI Design) ร่วมกับทีม UI 1 ท่าน ในช่วงสัปดาห์ที่ 4 ของเดือน</li>
+                        <li><span class="th-inline">รับ Requirement ต่อจาก PM ผ่านไฟล์ TOR และ Internal Meeting ในช่วงที่ยังไม่มี BA</span><span class="en-inline">Took over requirements from PM via TOR files and internal meetings during the period without a BA</span></li>
+                        <li><span class="th-inline">เริ่มรับผิดชอบออกแบบระบบ (UI Design) ร่วมกับทีม UI 1 ท่าน ในช่วงสัปดาห์ที่ 4 ของเดือน</span><span class="en-inline">Began UI design responsibilities alongside 1 UI team member in week 4 of the month</span></li>
                       </ul>
                     </div>
                   </div>
@@ -382,12 +403,12 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">กรกฎาคม – สิงหาคม 2568</div>
-                      <div class="tmkp-title">ออกแบบระบบและเก็บ Requirement</div>
+                      <div class="tmkp-title"><span class="th-inline">ออกแบบระบบและเก็บ Requirement</span><span class="en-inline">System Design and Requirements Gathering</span></div>
                       <ul class="tmkp-list">
-                        <li>ออกแบบ UI และจัด Workshop กับลูกค้าผ่าน Weekly Meeting ทุกวันศุกร์ พร้อมอัปเดต Design ในแต่ละ Version ตาม Requirement ที่ได้รับในแต่ละครั้ง</li>
-                        <li>ขับเคลื่อนกระบวนการคิดผ่าน <strong>Design Thinking</strong> โดยร่าง Flow และ Wireframe บนกระดาษ พร้อมวิเคราะห์ Good Case / Worst Case ก่อนออกแบบหน้าจอจริง</li>
-                        <li>เริ่มร่าง SRS และ BRD พร้อมจัดทำ Use Case Diagram, Use Cases และ BPMN Swimlane Flow</li>
-                        <li>ปิดการออกแบบ UI (Cut-off) ได้ภายใน <strong>2 เดือน</strong></li>
+                        <li><span class="th-inline">ออกแบบ UI และจัด Workshop กับลูกค้าผ่าน Weekly Meeting ทุกวันศุกร์ พร้อมอัปเดต Design ในแต่ละ Version ตาม Requirement ที่ได้รับในแต่ละครั้ง</span><span class="en-inline">Designed UI and conducted client workshops via weekly Friday meetings, updating designs each version per requirements received</span></li>
+                        <li><span class="th-inline">ขับเคลื่อนกระบวนการคิดผ่าน <strong>Design Thinking</strong> โดยร่าง Flow และ Wireframe บนกระดาษ พร้อมวิเคราะห์ Good Case / Worst Case ก่อนออกแบบหน้าจอจริง</span><span class="en-inline">Applied <strong>Design Thinking</strong> by drafting flows and wireframes on paper, analyzing Good Case / Worst Case scenarios before producing final screens</span></li>
+                        <li><span class="th-inline">เริ่มร่าง SRS และ BRD พร้อมจัดทำ Use Case Diagram, Use Cases และ BPMN Swimlane Flow</span><span class="en-inline">Began drafting SRS and BRD; created Use Case Diagrams, Use Cases, and BPMN Swimlane Flows</span></li>
+                        <li><span class="th-inline">ปิดการออกแบบ UI (Cut-off) ได้ภายใน <strong>2 เดือน</strong></span><span class="en-inline">Completed UI design cut-off within <strong>2 months</strong></span></li>
                       </ul>
                     </div>
                   </div>
@@ -396,15 +417,15 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">กันยายน – ตุลาคม 2568</div>
-                      <div class="tmkp-title">จัดทำเอกสาร BRD และ Test Case</div>
+                      <div class="tmkp-title"><span class="th-inline">จัดทำเอกสาร BRD และ Test Case</span><span class="en-inline">BRD Documentation and Test Case Preparation</span></div>
                       <ul class="tmkp-list">
-                        <li>เก็บ Requirement และจัดทำ MOM สรุปทุกการประชุม</li>
-                        <li>เขียน BRD นำเสนอลูกค้าจนได้ยอมรับ</li>
-                        <li>เขียน Test Case ตาม UI Flow และ BRD ให้ลูกค้า Accept เพื่อยืนยันความต้องการก่อนพัฒนา</li>
-                        <li>ทำ Sprint Planning โดยกระจาย Task ตาม Module Assignment ให้ทีม Developer</li>
-                        <li>จัดทำเอกสาร <strong>Master Data Field &amp; Description</strong> ในส่วนการจัดการหลังบ้าน เพื่อเป็นแนวทางให้กับทีม</li>
+                        <li><span class="th-inline">เก็บ Requirement และจัดทำ MOM สรุปทุกการประชุม</span><span class="en-inline">Gathered requirements and prepared MOM summaries for every meeting</span></li>
+                        <li><span class="th-inline">เขียน BRD นำเสนอลูกค้าจนได้ยอมรับ</span><span class="en-inline">Wrote BRD and presented to client until accepted</span></li>
+                        <li><span class="th-inline">เขียน Test Case ตาม UI Flow และ BRD ให้ลูกค้า Accept เพื่อยืนยันความต้องการก่อนพัฒนา</span><span class="en-inline">Wrote Test Cases based on UI Flow and BRD for client acceptance prior to development</span></li>
+                        <li><span class="th-inline">ทำ Sprint Planning โดยกระจาย Task ตาม Module Assignment ให้ทีม Developer</span><span class="en-inline">Conducted Sprint Planning by distributing module-level tasks to the development team</span></li>
+                        <li><span class="th-inline">จัดทำเอกสาร <strong>Master Data Field &amp; Description</strong> ในส่วนการจัดการหลังบ้าน เพื่อเป็นแนวทางให้กับทีม</span><span class="en-inline">Prepared <strong>Master Data Field &amp; Description</strong> documentation for the back-office section as a team reference</span></li>
                       </ul>
-                      <div class="tmkp-note">UAT รอบแรกเลื่อนเนื่องจากขาด Dev Resource — ใช้โอกาสนี้เก็บ Requirement เพิ่มเติมด้าน Report/Dashboard และส่วนที่ยังไม่ชัดเจน พร้อมจัดทำ Documentation รวบรวมเอกสารและลิงก์อ้างอิง (Figma, Master Data) และร่างเอกสารที่เกี่ยวกับ Non-Functional เช่น API Spec, SRS แทน Dev เพื่อลดเวลาการทำงานของทีม Developer ให้มากที่สุด พร้อม Meeting กับลูกค้าทุกอาทิตย์ เพื่อบริหารความคาดหวังและความน่าเชื่อถือ</div>
+                      <div class="tmkp-note"><span class="th-inline">UAT รอบแรกเลื่อนเนื่องจากขาด Dev Resource — ใช้โอกาสนี้เก็บ Requirement เพิ่มเติมด้าน Report/Dashboard และส่วนที่ยังไม่ชัดเจน พร้อมจัดทำ Documentation รวบรวมเอกสารและลิงก์อ้างอิง (Figma, Master Data) และร่างเอกสารที่เกี่ยวกับ Non-Functional เช่น API Spec, SRS แทน Dev เพื่อลดเวลาการทำงานของทีม Developer ให้มากที่สุด พร้อม Meeting กับลูกค้าทุกอาทิตย์ เพื่อบริหารความคาดหวังและความน่าเชื่อถือ</span><span class="en-inline">UAT Round 1 was postponed due to limited dev resources — used the time to gather additional requirements for Report/Dashboard sections, consolidate documentation (Figma, Master Data references), and draft Non-Functional documents such as API Spec and SRS on behalf of the developers to reduce their workload. Maintained weekly client meetings to manage expectations and credibility.</span></div>
                     </div>
                   </div>
 
@@ -412,13 +433,13 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">พฤศจิกายน – ธันวาคม 2568</div>
-                      <div class="tmkp-title">ส่งมอบเอกสารและเริ่มพัฒนาร่วมกับทีม</div>
+                      <div class="tmkp-title"><span class="th-inline">ส่งมอบเอกสารและเริ่มพัฒนาร่วมกับทีม</span><span class="en-inline">Document Handover and Development Collaboration</span></div>
                       <ul class="tmkp-list">
-                        <li>ส่งมอบเอกสารและลิงก์อ้างอิงให้ทีม Developer</li>
-                        <li>Consult และติดตาม Progress ของ Developer (Senior 1 ท่าน, Junior 1 ท่าน) ทุกวัน</li>
-                        <li>เขียน SIT และทดสอบระบบ Module รับซื้อ, ระบบประเมินผล และระบบหลังบ้าน หลัง Dev พัฒนาเสร็จในแต่ละ Sprint</li>
-                        <li>จัดทำ <strong>Lark Automation</strong> เพื่อ Track สถานะงานและส่ง Notification อัตโนมัติเมื่อ Dev ทำ Task เสร็จ ช่วยให้เริ่มทดสอบได้ทันทีโดยไม่ต้องตามงานเอง</li>
-                        <li>จัด Weekly Meeting Update กับลูกค้าต่อเนื่อง</li>
+                        <li><span class="th-inline">ส่งมอบเอกสารและลิงก์อ้างอิงให้ทีม Developer</span><span class="en-inline">Handed over all documents and reference links to the development team</span></li>
+                        <li><span class="th-inline">Consult และติดตาม Progress ของ Developer (Senior 1 ท่าน, Junior 1 ท่าน) ทุกวัน</span><span class="en-inline">Consulted and tracked daily progress of the developers (1 Senior, 1 Junior)</span></li>
+                        <li><span class="th-inline">เขียน SIT และทดสอบระบบ Module รับซื้อ, ระบบประเมินผล และระบบหลังบ้าน หลัง Dev พัฒนาเสร็จในแต่ละ Sprint</span><span class="en-inline">Conducted SIT testing on the purchasing, evaluation, and back-office modules after each sprint completion</span></li>
+                        <li><span class="th-inline">จัดทำ <strong>Lark Automation</strong> เพื่อ Track สถานะงานและส่ง Notification อัตโนมัติเมื่อ Dev ทำ Task เสร็จ ช่วยให้เริ่มทดสอบได้ทันทีโดยไม่ต้องตามงานเอง</span><span class="en-inline">Built <strong>Lark Automation</strong> to track task status and send automatic notifications when developers completed tasks, enabling immediate testing without manual follow-up</span></li>
+                        <li><span class="th-inline">จัด Weekly Meeting Update กับลูกค้าต่อเนื่อง</span><span class="en-inline">Continued weekly client update meetings</span></li>
                       </ul>
                     </div>
                   </div>
@@ -427,12 +448,12 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">มกราคม 2569</div>
-                      <div class="tmkp-title">UAT รอบที่ 1 (7–9 ม.ค.)</div>
+                      <div class="tmkp-title"><span class="th-inline">UAT รอบที่ 1 (7–9 ม.ค.)</span><span class="en-inline">UAT Round 1 (7–9 Jan)</span></div>
                       <ul class="tmkp-list">
-                        <li>จัดทำ UAT Plan รายวัน ครอบคลุมการทดสอบระบบและฮาร์ดแวร์ทุกสาขา (Weight Scale, กล้อง)</li>
-                        <li>จัดทำ UAT Test Case ตาม Scenario และใบรายชื่อผู้เข้าร่วม</li>
-                        <li>Lead UAT ร่วมกับลูกค้าตลอด 3 วัน</li>
-                        <li>จัดทำ UAT Report สรุป Issue แยกประเภท (Defect, New Feature, CR) พร้อมนำเสนอข้อสรุปในแต่ละเคส จนลูกค้าลงนาม <strong>UAT Sign-off (Acceptance) ผ่าน</strong></li>
+                        <li><span class="th-inline">จัดทำ UAT Plan รายวัน ครอบคลุมการทดสอบระบบและฮาร์ดแวร์ทุกสาขา (Weight Scale, กล้อง)</span><span class="en-inline">Prepared daily UAT Plan covering system and hardware testing across all branches (Weight Scale, cameras)</span></li>
+                        <li><span class="th-inline">จัดทำ UAT Test Case ตาม Scenario และใบรายชื่อผู้เข้าร่วม</span><span class="en-inline">Prepared UAT Test Cases by scenario and attendee lists</span></li>
+                        <li><span class="th-inline">Lead UAT ร่วมกับลูกค้าตลอด 3 วัน</span><span class="en-inline">Led UAT with the client over 3 days</span></li>
+                        <li><span class="th-inline">จัดทำ UAT Report สรุป Issue แยกประเภท (Defect, New Feature, CR) พร้อมนำเสนอข้อสรุปในแต่ละเคส จนลูกค้าลงนาม <strong>UAT Sign-off (Acceptance) ผ่าน</strong></span><span class="en-inline">Prepared UAT Report summarizing issues by category (Defect, New Feature, CR), presented conclusions for each case until client signed <strong>UAT Sign-off (Acceptance)</strong></span></li>
                       </ul>
                     </div>
                   </div>
@@ -441,12 +462,12 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">มกราคม – กุมภาพันธ์ 2569</div>
-                      <div class="tmkp-title">ดำเนินการต่อหลัง UAT</div>
+                      <div class="tmkp-title"><span class="th-inline">ดำเนินการต่อหลัง UAT</span><span class="en-inline">Post-UAT Activities</span></div>
                       <ul class="tmkp-list">
-                        <li>สรุป CR Case ร่วมกับทีม จัดทำเอกสาร CR ส่งลูกค้า Sign-Off</li>
-                        <li>เก็บ Requirement และออกแบบการทำงานจาก CR ที่ได้รับหลัง UAT</li>
-                        <li>จัดการ Issue แบบครบวงจร: บันทึก (Log) → ติดตาม (Follow-up) → ทดสอบซ้ำ (Retest) ในส่วนที่ Dev แก้ไขแล้ว ทั้ง Defect และ New Feature</li>
-                        <li>Weekly Meeting Update</li>
+                        <li><span class="th-inline">สรุป CR Case ร่วมกับทีม จัดทำเอกสาร CR ส่งลูกค้า Sign-Off</span><span class="en-inline">Summarized CR cases with the team and prepared CR documents for client sign-off</span></li>
+                        <li><span class="th-inline">เก็บ Requirement และออกแบบการทำงานจาก CR ที่ได้รับหลัง UAT</span><span class="en-inline">Gathered requirements and designed workflows for CRs received after UAT</span></li>
+                        <li><span class="th-inline">จัดการ Issue แบบครบวงจร: บันทึก (Log) → ติดตาม (Follow-up) → ทดสอบซ้ำ (Retest) ในส่วนที่ Dev แก้ไขแล้ว ทั้ง Defect และ New Feature</span><span class="en-inline">Managed issues end-to-end: Log → Follow-up → Retest for both Defects and New Features</span></li>
+                        <li><span class="th-inline">Weekly Meeting Update</span><span class="en-inline">Weekly meeting updates</span></li>
                       </ul>
                     </div>
                   </div>
@@ -455,19 +476,19 @@
                     <div class="tmkp-dot-col"><div class="tmkp-dot"></div></div>
                     <div class="tmkp-body">
                       <div class="tmkp-period">มีนาคม 2569 – ปัจจุบัน</div>
-                      <div class="tmkp-title">ดำเนินการสู่ UAT รอบที่ 2 และ Go-Live</div>
+                      <div class="tmkp-title"><span class="th-inline">ดำเนินการสู่ UAT รอบที่ 2 และ Go-Live</span><span class="en-inline">Progressing to UAT Round 2 and Go-Live</span></div>
                       <ul class="tmkp-list">
-                        <li>อัปเดต <strong>Change Log / Release Notes</strong> ทุกรอบที่แก้ไขเอกสาร (SIT, SRS, BRD) เพื่อการส่งมอบ</li>
-                        <li>ทดสอบระบบเป็นระยะตาม Sprint ที่พัฒนาเสร็จ</li>
-                        <li>จัดประชุม Integration ร่วมกับทีม SAP และ UOB</li>
-                        <li>ประสานงาน Stakeholder เมื่อพบปัญหาระหว่างทดสอบ API ใน UAT และ Production Environment</li>
-                        <li>ปัจจุบันอยู่ระหว่างจัดทำ UAT Plan, UAT Test Case และ User Manual สำหรับ Go-Live</li>
-                        <li>Weekly Meeting พร้อมจัดทำ MOM ทุกสัปดาห์</li>
+                        <li><span class="th-inline">อัปเดต <strong>Change Log / Release Notes</strong> ทุกรอบที่แก้ไขเอกสาร (SIT, SRS, BRD) เพื่อการส่งมอบ</span><span class="en-inline">Updated <strong>Change Log / Release Notes</strong> for each document revision (SIT, SRS, BRD) for delivery</span></li>
+                        <li><span class="th-inline">ทดสอบระบบเป็นระยะตาม Sprint ที่พัฒนาเสร็จ</span><span class="en-inline">Periodic system testing per sprint completion</span></li>
+                        <li><span class="th-inline">จัดประชุม Integration ร่วมกับทีม SAP และ UOB</span><span class="en-inline">Conducted Integration meetings with SAP and UOB teams</span></li>
+                        <li><span class="th-inline">ประสานงาน Stakeholder เมื่อพบปัญหาระหว่างทดสอบ API ใน UAT และ Production Environment</span><span class="en-inline">Coordinated with stakeholders when API testing issues arose in UAT and Production environments</span></li>
+                        <li><span class="th-inline">ปัจจุบันอยู่ระหว่างจัดทำ UAT Plan, UAT Test Case และ User Manual สำหรับ Go-Live</span><span class="en-inline">Currently preparing UAT Plan, UAT Test Cases, and User Manual for Go-Live</span></li>
+                        <li><span class="th-inline">Weekly Meeting พร้อมจัดทำ MOM ทุกสัปดาห์</span><span class="en-inline">Weekly meetings with MOM prepared every week</span></li>
                       </ul>
                       <div class="tmkp-goal">
-                        <div style="font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-600);margin-bottom:8px">Project Plan ปัจจุบัน</div>
-                        <div>UAT รอบที่ 2 : <strong>26 มิถุนายน 2569</strong></div>
-                        <div style="margin-top:4px">Go-Live : <strong>17 กรกฎาคม 2569</strong></div>
+                        <div style="font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-600);margin-bottom:8px"><span class="th-inline">Project Plan ปัจจุบัน</span><span class="en-inline">Current Project Plan</span></div>
+                        <div><span class="th-inline">UAT รอบที่ 2 : <strong>26 มิถุนายน 2569</strong></span><span class="en-inline">UAT Round 2 : <strong>26 June 2026</strong></span></div>
+                        <div style="margin-top:4px"><span class="th-inline">Go-Live : <strong>17 กรกฎาคม 2569</strong></span><span class="en-inline">Go-Live : <strong>17 July 2026</strong></span></div>
                       </div>
                     </div>
                   </div>
@@ -476,21 +497,21 @@
 
                 <!-- Folder -->
                 <div class="vt-album-section" style="margin-top:20px">
-                  <div class="vt-album-label">ผลงานและกระบวนการทำงาน</div>
+                  <div class="vt-album-label"><span class="th-inline">ผลงานและกระบวนการทำงาน</span><span class="en-inline">Work Portfolio &amp; Process</span></div>
                   <button class="folder-btn" onclick="openAlbum('tmk-work')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-                    <span>TMK — กระบวนการทำงาน</span>
+                    <span>TMK — <span class="th-inline">กระบวนการทำงาน</span><span class="en-inline">Work Process</span></span>
                   </button>
                   <button class="folder-btn" onclick="openAlbum('tmk-photos')" style="margin-top:8px">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                    <span>ประมวลภาพการทำงาน</span>
+                    <span><span class="th-inline">ประมวลภาพการทำงาน</span><span class="en-inline">Work Photo Gallery</span></span>
                   </button>
                 </div>
               </div>
 
               <!-- Other projects -->
               <div class="other-projects">
-                <h5 class="op-title">โปรเจกต์อื่นๆ</h5>
+                <h5 class="op-title"><span class="th-inline">โปรเจกต์อื่นๆ</span><span class="en-inline">Other Projects</span></h5>
                 <div class="op-grid">
 
                   <!-- Commission -->
@@ -504,7 +525,8 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                       </button>
                     </div>
-                    <div class="op-desc">Real-time Commission Tracking Dashboard ครอบคลุม 5 สาขา Department Store รับผิดชอบเก็บ Requirement และออกแบบหน้าจอระบบ จัดทำรายงานเปรียบเทียบ SMS Gateway และประสานงานกับ ThaiBulkSMS โดยตรงเพื่อ Integrate API รองรับการเข้าใช้ผ่านเบอร์โทรศัพท์ ลดเวลาตรวจสอบ Commission จากชั่วโมง → วินาที</div>
+                    <div class="op-desc th">Real-time Commission Tracking Dashboard ครอบคลุม 5 สาขา Department Store รับผิดชอบเก็บ Requirement และออกแบบหน้าจอระบบ จัดทำรายงานเปรียบเทียบ SMS Gateway และประสานงานกับ ThaiBulkSMS โดยตรงเพื่อ Integrate API รองรับการเข้าใช้ผ่านเบอร์โทรศัพท์ ลดเวลาตรวจสอบ Commission จากชั่วโมง → วินาที</div>
+                    <div class="op-desc en">Real-time Commission Tracking Dashboard covering 5 department store branches. Responsible for requirements gathering, screen design, SMS Gateway comparison report, and direct coordination with ThaiBulkSMS for API integration. Reduced commission verification time from hours to seconds.</div>
                   </div>
 
                   <!-- Safety Warehouse -->
@@ -518,7 +540,8 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                       </button>
                     </div>
-                    <div class="op-desc">ออกแบบโซลูชันความปลอดภัยในคลังสินค้าด้วย Aruba BLE และ RFID — <strong>BLE Proximity Detection</strong> ติด BLE Card กับพนักงาน / AP บนรถ Forklift แจ้งเตือนเมื่อเข้าใกล้ · <strong>RFID Aisle Alert</strong> ติด RFID Tags ทุก Aisle สั่ง LED บน Rack เปลี่ยนเป็นสีแดง ประเมินความเป็นไปได้จนพบข้อจำกัดด้านงบและสัญญาณ จึงสรุปไม่เดินหน้าต่อ</div>
+                    <div class="op-desc th">ออกแบบโซลูชันความปลอดภัยในคลังสินค้าด้วย Aruba BLE และ RFID — <strong>BLE Proximity Detection</strong> ติด BLE Card กับพนักงาน / AP บนรถ Forklift แจ้งเตือนเมื่อเข้าใกล้ · <strong>RFID Aisle Alert</strong> ติด RFID Tags ทุก Aisle สั่ง LED บน Rack เปลี่ยนเป็นสีแดง ประเมินความเป็นไปได้จนพบข้อจำกัดด้านงบและสัญญาณ จึงสรุปไม่เดินหน้าต่อ</div>
+                    <div class="op-desc en">Designed a warehouse safety solution using Aruba BLE and RFID — <strong>BLE Proximity Detection</strong> attaches BLE cards to workers / APs on forklifts with alerts when in range · <strong>RFID Aisle Alert</strong> attaches RFID tags to each aisle, triggering red LED alerts on racks. Feasibility was assessed; the project was discontinued due to budget and signal limitations.</div>
                   </div>
 
                   <!-- Smart Vision -->
@@ -532,7 +555,8 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                       </button>
                     </div>
-                    <div class="op-desc">ออกแบบโซลูชันคลังสินค้ากระเบื้องแบบ Lot ติดกล้องอุตสาหกรรมบนงา Forklift เพื่อสแกน QR Code บน Pallet และ Rack สำหรับ Mapping ตำแหน่งจัดเก็บ ช่วยจัดการ Inventory และระบุสถานที่จัดเก็บได้แม่นยำ</div>
+                    <div class="op-desc th">ออกแบบโซลูชันคลังสินค้ากระเบื้องแบบ Lot ติดกล้องอุตสาหกรรมบนงา Forklift เพื่อสแกน QR Code บน Pallet และ Rack สำหรับ Mapping ตำแหน่งจัดเก็บ ช่วยจัดการ Inventory และระบุสถานที่จัดเก็บได้แม่นยำ</div>
+                    <div class="op-desc en">Designed a tile warehouse lot management solution with industrial cameras mounted on forklift forks to scan QR codes on pallets and racks for storage position mapping, enabling accurate inventory management and location tracking.</div>
                   </div>
 
                   <!-- SaaS Laundry -->
@@ -546,7 +570,8 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                       </button>
                     </div>
-                    <div class="op-desc">In-House SaaS Product ต่อยอดจาก Laundry MA Product เดิม — BA เก็บ Requirement กับ CEO, จัดทำ Scope of Work Phase แรก, ใช้ Claude สร้าง Prototype เพื่อ Cut-off Requirement ก่อนส่งต่อ Designer ปัจจุบัน Pause ชั่วคราวเพื่อจัดลำดับความสำคัญงานลูกค้า</div>
+                    <div class="op-desc th">In-House SaaS Product ต่อยอดจาก Laundry MA Product เดิม — BA เก็บ Requirement กับ CEO, จัดทำ Scope of Work Phase แรก, ใช้ Claude สร้าง Prototype เพื่อ Cut-off Requirement ก่อนส่งต่อ Designer ปัจจุบัน Pause ชั่วคราวเพื่อจัดลำดับความสำคัญงานลูกค้า</div>
+                    <div class="op-desc en">In-House SaaS Product extending the existing Laundry MA Product — BA gathered requirements with CEO, prepared Phase 1 Scope of Work, used Claude to build a prototype for requirement cut-off before handover to designer. Currently paused to prioritize client projects.</div>
                   </div>
 
                 </div>
@@ -580,7 +605,7 @@
               </div>
 
               <!-- Auto-scroll gallery -->
-              <div class="vt-album-label" style="margin-top:20px">ประมวลภาพการทำงาน</div>
+              <div class="vt-album-label" style="margin-top:20px"><span class="th-inline">ประมวลภาพการทำงาน</span><span class="en-inline">Work Photo Gallery</span></div>
               <div class="work-gallery-wrap">
                 <div class="work-gallery-track" id="workGalleryTrack">
                   <img src="work-gallery/1.jpg" class="wg-img" onclick="openLightbox(this)"/>
@@ -625,9 +650,10 @@
               <div class="future-plan">
                 <div class="fp-header">
                   <div class="fp-icon"></div>
-                  <div class="fp-title">แผนอนาคต</div>
+                  <div class="fp-title"><span class="th-inline">แผนอนาคต</span><span class="en-inline">Future Plans</span></div>
                 </div>
-                <p class="fp-text">ดิฉันอยากเติบโตในองค์กรที่ได้พัฒนาตัวเองอย่างต่อเนื่อง สิ่งที่ขับเคลื่อนดิฉันคือการได้เห็น User ใช้งานระบบที่ดิฉันออกแบบได้จริง เพราะมันคือเครื่องพิสูจน์ว่าสิ่งที่คิดสร้างคุณค่าได้จริง — และสิ่งเหล่านั้นทำให้ดิฉันภูมิใจในตัวเอง เป็นเหมือนไฟในการทำงาน ดิฉันรักการเรียนรู้สิ่งใหม่ และตั้งใจเติบโตในเส้นทาง Product เพื่อสร้างโซลูชันที่ช่วยให้การทำงานของผู้คนง่ายและมีความหมายมากขึ้น</p>
+                <p class="fp-text th">ดิฉันอยากเติบโตในองค์กรที่ได้พัฒนาตัวเองอย่างต่อเนื่อง สิ่งที่ขับเคลื่อนดิฉันคือการได้เห็น User ใช้งานระบบที่ดิฉันออกแบบได้จริง เพราะมันคือเครื่องพิสูจน์ว่าสิ่งที่คิดสร้างคุณค่าได้จริง — และสิ่งเหล่านั้นทำให้ดิฉันภูมิใจในตัวเอง เป็นเหมือนไฟในการทำงาน ดิฉันรักการเรียนรู้สิ่งใหม่ และตั้งใจเติบโตในเส้นทาง Product เพื่อสร้างโซลูชันที่ช่วยให้การทำงานของผู้คนง่ายและมีความหมายมากขึ้น</p>
+                <p class="fp-text en">I aspire to grow within an organization that fosters continuous development. What drives me is seeing real users work with systems I have designed — it is proof that what I create delivers genuine value, and that gives me a deep sense of pride and purpose. I am passionate about learning and committed to developing along the Product path, building solutions that make people's work simpler and more meaningful.</p>
               </div>
 
             </div>
@@ -648,7 +674,7 @@
   <div class="container contact-wrap">
     <div class="section-label scroll-reveal" style="color:#7dd3fc">Contact</div>
     <h2 class="section-title scroll-reveal" style="color:#fff">Let's Work Together</h2>
-    <p class="contact-sub scroll-reveal" style="color:rgba(255,255,255,.75)">พร้อมนำศักยภาพที่มีมาเติบโตไปกับ <img src="1moby-logo.png" alt="1Moby" style="height:18px;width:auto;vertical-align:middle;filter:brightness(0) invert(1);opacity:.85;display:inline;margin:0 2px"/> และขับเคลื่อนโซลูชันที่สร้างคุณค่าให้ลูกค้า<br/>เพราะความสำเร็จของลูกค้า คือความสำเร็จของเรา</p>
+    <p class="contact-sub scroll-reveal" style="color:rgba(255,255,255,.75)">พร้อมนำศักยภาพและประสบการณ์ที่มีเพื่อเติบโตในองค์กรที่ดี<br/>Ready to bring expertise and drive meaningful impact.</p>
     <div class="contact-cards">
       <a class="contact-card contact-card-float scroll-reveal" style="--sd:.1s" href="mailto:Sujittra.pankaraket@gmail.com">
         <div class="cc-icon">
@@ -687,8 +713,7 @@
   <div class="container footer-inner">
     <span class="footer-name">Sujittra Pankaraket</span>
     <span class="footer-sep">·</span>
-    <span class="footer-applying">Applying for Product Delivery at</span>
-    <img src="1moby-footer.png" alt="1Moby" class="footer-1moby"/>
+    <span class="footer-copy">© 2026</span>
   </div>
 </footer>
 

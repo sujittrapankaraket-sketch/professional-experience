@@ -498,3 +498,17 @@ const linkObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-40% 0px -55% 0px' });
 sections.forEach(s => linkObserver.observe(s));
+
+// ── Language Toggle ──
+function toggleLang() {
+  const html = document.documentElement;
+  const btn = document.getElementById('langToggle');
+  if (html.getAttribute('data-lang') === 'en') {
+    html.removeAttribute('data-lang');
+    html.setAttribute('data-lang', 'th');
+    btn.textContent = 'EN';
+  } else {
+    html.setAttribute('data-lang', 'en');
+    btn.textContent = 'TH';
+  }
+}
