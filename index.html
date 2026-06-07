@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujittra Pankaraket — Product Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+
+<!-- ───────────────────────── NAV ───────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#career">Experience</a></li>
+    </ul>
+    <a class="btn btn-nav-contact" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<section class="hero" id="hero">
+  <canvas id="terrainCanvas"></canvas>
+
+  <div class="hero-layout">
+  <!-- Overlay content -->
+  <div class="hero-overlay">
+    <h1 class="hero-motto-big">
+      <span class="word-reveal-line">
+        <span class="word-mask"><span class="word-inner" style="--wi:0">"Systems</span></span>
+        <span class="word-mask"><span class="word-inner" style="--wi:1">that</span></span>
+        <span class="word-mask"><span class="word-inner" style="--wi:2">matter,</span></span>
+      </span>
+      <span class="word-reveal-line">
+        <span class="word-mask"><span class="word-inner" style="--wi:3">for</span></span>
+        <span class="word-mask"><span class="word-inner" style="--wi:4">work</span></span>
+        <span class="word-mask"><span class="word-inner" style="--wi:5">that</span></span>
+        <span class="word-mask"><span class="word-inner" style="--wi:6">matters."</span></span>
+      </span>
+    </h1>
+    <img src="1moby-logo.png" alt="1Moby" class="hero-1moby-logo hero-after-reveal"/>
+    <div class="hero-cta hero-after-reveal">
+      <a class="btn btn-glow" href="#career">ดูประวัติการทำงาน</a>
+      <a class="btn btn-ghost" href="#about">เกี่ยวกับฉัน</a>
+    </div>
+  </div>
+
+  <!-- Floating cards -->
+  <div class="hero-cards-dark hero-after-reveal">
+    <div class="floating-card-dark">
+      <div class="fc-label">Position Applied for</div>
+      <div class="fc-val fc-glow">Product Delivery</div>
+    </div>
+    <div class="floating-card-dark">
+      <div class="fc-label">Current Role</div>
+      <div class="fc-val">Business Analyst &amp; UX/UI Designer</div>
+      <div class="fc-sub">At Intelligence System Corporation</div>
+    </div>
+    <div class="floating-card-dark">
+      <div class="fc-label">Current Location</div>
+      <div class="fc-val">Bangkok, Thailand</div>
+    </div>
+  </div><!-- /hero-cards-dark -->
+  </div><!-- /hero-layout -->
+</section>
+
+<!-- ───────────────────────── ABOUT ───────────────────────── -->
+<section class="about-section" id="about">
+  <video class="about-bg-video" autoplay muted loop playsinline>
+    <source src="bg-about.mp4" type="video/mp4"/>
+  </video>
+  <div class="about-bg-overlay"></div>
+
+  <div class="about-container">
+
+    <!-- Top: Profile + Bio -->
+    <div class="about-top">
+      <div class="about-profile-col">
+        <img src="profile.png" alt="Sujittra Pankaraket" class="about-avatar"/>
+        <div class="about-name-block">
+          <h2 class="about-name-th">สุจิตรา ปานการะเกตุ</h2>
+          <p class="about-name-en">Sujittra Pankaraket</p>
+        </div>
+      </div>
+      <div class="about-bio-col">
+        <div class="about-section-label">About Me</div>
+        <p class="about-bio">Business Analyst &amp; UX/UI Designer who owns product delivery end-to-end. As the sole BA across multiple concurrent enterprise projects, I cover all three roles — Business Analyst, Tester, and UX/UI Designer — from requirements gathering and SDLC documentation (ISO 29110) to coordinating with developers, testing the system myself, and driving it through to go-live.</p>
+        <p class="about-bio" style="margin-top:10px">My main project is an agricultural commodity trading platform integrating SAP B1 and the UOB Payment Gateway, where I break work into module-level tasks, track timelines and dependencies, manage change requests and defects across SIT/UAT cycles, lead UAT with clients, and keep stakeholders aligned to deliver on schedule.</p>
+        <p class="about-bio" style="margin-top:10px">I work best in fast-paced Agile/Scrum environments — proactive in unblocking the team, clear in communication, and driven by a strong ownership mindset.</p>
+      </div>
+    </div>
+
+    <!-- Bento grid — 3 col matching reference -->
+    <div class="about-bento">
+
+      <!-- Left col: Age + Domicile -->
+      <div class="about-col about-col-left">
+        <div class="abox abox-age">
+          <div class="abox-label">Age</div>
+          <div class="abox-num">23</div>
+        </div>
+        <div class="abox abox-domicile">
+          <div class="abox-pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </div>
+          <div class="abox-label">Domicile</div>
+          <div class="abox-val">Ratchaburi</div>
+        </div>
+      </div>
+
+      <!-- Center col: Hero (quote+Mimo) + Address -->
+      <div class="about-col about-col-center">
+        <div class="abox abox-hero">
+          <p class="abox-quote">Sujittra Pankaraket<br/>สุจิตรา ปานการะเกตุ</p>
+          <div class="abox-nickname-block">
+            <div class="abox-label">Nickname</div>
+            <div class="abox-nickname-big"><span class="abox-quotemark">"</span>Mimo<span class="abox-quotemark">"</span></div>
+          </div>
+        </div>
+        <div class="abox abox-address">
+          <div class="abox-pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg>
+          </div>
+          <div class="abox-label">Current Address</div>
+          <div class="abox-val">Ramkhamhaeng 24</div>
+          <div class="abox-sub">Bangkok</div>
+        </div>
+      </div>
+
+      <!-- Right col: MJU + ENTJ -->
+      <div class="about-col about-col-right">
+        <div class="abox abox-mju">
+          <div class="abox-mju-top">
+            <img src="mju-square.png" alt="MJU" class="abox-mju-icon"/>
+            <div class="abox-mju-name">Maejo<br/>University</div>
+          </div>
+          <div class="abox-mju-degree">B.Sc. Computer Science</div>
+          <div class="abox-honors">
+            First-Class Honors&nbsp;·&nbsp;<span class="abox-purple">GPA 3.51</span>
+          </div>
+        </div>
+        <div class="abox abox-entj">
+          <img src="entj.png" alt="ENTJ-A" class="abox-entj-img"/>
+          <div class="abox-entj-info">
+            <div class="abox-entj-title">MBTI</div>
+            <div class="abox-purple-tag">ENTJ-A</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ───────────────────────── CAREER ───────────────────────── -->
+<section class="section section-dark" id="career">
+  <div class="container">
+    <div class="section-label light">Session 02</div>
+    <h2 class="section-title light">ประวัติการทำงาน</h2>
+
+    <!-- ── PRE‑GRAD: horizontal scroll timeline ── -->
+    <div class="timeline-segment">
+      <div class="ts-header">
+        <div class="ts-tag">ก่อนเรียนจบ</div>
+        <p class="ts-sub">ประสบการณ์ที่สะสมมาตั้งแต่ยังเรียนอยู่</p>
+      </div>
+      <div class="h-timeline-wrapper">
+        <div class="h-timeline">
+
+          <div class="ht-item">
+            <div class="ht-dot ht-dot-img">
+              <img src="dot-1.png" alt="" class="ht-dot-icon"/>
+            </div>
+            <div class="ht-card" data-modal="pre1">
+              <div class="ht-period">2561 – 2565 (ม.4 – ปี 1)</div>
+              <div class="ht-role">Freelance Jobs</div>
+              <div class="ht-company">Instagram: @shouldme.plss</div>
+              <div class="ht-desc">เปิดเพจ IG หาลูกค้าเอง รับงานเอกสาร กราฟิก และ Design</div>
+              <div class="ht-more">คลิกเพื่อดูรายละเอียด →</div>
+            </div>
+          </div>
+
+          <div class="ht-connector ht-connector-anim" id="htLine1"></div>
+
+          <div class="ht-item">
+            <div class="ht-dot"></div>
+            <div class="ht-card" data-modal="pre2">
+              <div class="ht-period">2565 – ปัจจุบัน</div>
+              <div class="ht-role">Graphic Designer</div>
+              <div class="ht-company">Freelance Part-time · Gelate</div>
+              <div class="ht-desc">ดูแล Artwork ให้ร้าน Gelate (บริษัท หวานเย็นสากล จำกัด)</div>
+              <div class="ht-more">คลิกเพื่อดูรายละเอียด →</div>
+            </div>
+          </div>
+
+          <div class="ht-connector ht-connector-anim" id="htLine2"></div>
+
+          <div class="ht-item" id="htItem3">
+            <div class="ht-dot ht-dot-img" id="htDot3">
+              <img src="dot-3.png" alt="" class="ht-dot-icon" id="htDotImg3" style="opacity:0"/>
+            </div>
+            <div class="ht-card" data-modal="pre3">
+              <div class="ht-period">2565 – ปัจจุบัน</div>
+              <div class="ht-role">Admin &amp; Content Creator</div>
+              <div class="ht-company">Part-time · Gelate &amp; โปรเต้</div>
+              <div class="ht-desc">คิด Content และออกแบบรูปภาพลงโซเชียลมีเดีย</div>
+              <div class="ht-more">คลิกเพื่อดูรายละเอียด →</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ── POST‑GRAD: vertical timeline ── -->
+    <div class="timeline-segment mt-lg">
+      <div class="ts-header">
+        <div class="ts-tag">ทำงานจริง</div>
+        <p class="ts-sub">ประสบการณ์วิชาชีพ ตั้งแต่ Apr 2024 – ปัจจุบัน</p>
+      </div>
+
+      <div class="v-timeline">
+
+        <!-- Lucas Strategy -->
+        <div class="vt-item" id="job-lucas">
+          <div class="vt-dot-col">
+            <div class="vt-dot"></div>
+            <div class="vt-line"></div>
+          </div>
+          <div class="vt-body">
+            <div class="vt-header">
+              <div class="vt-meta">
+                <div class="vt-period">Apr 2024 – Oct 2024 · 6 เดือน</div>
+                <div class="vt-role">Internship UX/UI Designer</div>
+                <div class="vt-company">Lucas Strategy Co., Ltd. <span style="font-size:.75rem;opacity:.6">(Software House)</span></div>
+                <div class="vt-badge badge-intern">สหกิจศึกษา</div>
+              </div>
+              <div class="vt-expand-btn" aria-label="expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="vt-summary">Internship UX/UI Designer ณ Lucas Strategy — ดูแลงานตั้งแต่ออกแบบระบบ, UX Research, Corporate Identity ไปจนถึงเว็บไซต์และสื่อสิ่งพิมพ์</div>
+            <div class="vt-detail">
+
+              <ul class="detail-list">
+                <li>
+                  <strong>ระบบจัดการสัญญาบำรุงรักษา (In-House · โปรเจคสหกิจ)</strong> — เก็บ Requirement จาก CEO, ออกแบบ Flow และ UI, จัดทำเอกสารวิจัยนำเสนอใน
+                  <a class="vt-link" href="https://share.google/x7H8CJ5sWUidhWKdA" target="_blank">วารสาร MITIJ ปีที่ 11 ↗</a>
+                </li>
+                <li>
+                  <strong>แพลตฟอร์มโรงพยาบาลสัตว์เลี้ยง (In-House Product)</strong> — ออกแบบ Logo, Corporate Identity, UI Design และทำ UX Research เพื่อสร้าง User Story และแยก Epic Story List แบบ Agile
+                </li>
+                <li>
+                  <strong>เว็บไซต์บริษัท</strong> — ออกแบบและถ่ายภาพ รวมถึงจัดทำเนื้อหา
+                  <a class="vt-link" href="https://www.ls.co.th/" target="_blank">ls.co.th ↗</a>
+                </li>
+                <li>
+                  <strong>เว็บไซต์ลูกค้า</strong> — ออกแบบและประสานงานกับลูกค้าเพื่อแก้ไข (Support MA)
+                </li>
+                <li>
+                  <strong>Graphic Design</strong> — เก็บ Requirement และพรีเซนต์ผลงานกับลูกค้าด้วยตนเอง
+                </li>
+                <li>
+                  <strong>เสื้อ &amp; บรรจุภัณฑ์</strong> — ออกแบบเสื้อ, แก้วน้ำ, กระเป๋าผ้าของบริษัท
+                </li>
+              </ul>
+
+              <!-- Folder album -->
+              <div class="vt-album-section">
+                <div class="vt-album-label">ผลงานและกระบวนการทำงาน</div>
+                <button class="folder-btn" onclick="openAlbum('ls-work')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                  </svg>
+                  <span>กระบวนการทำงาน</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- InSysc UX/UI -->
+        <div class="vt-item" id="job-insysc-ux">
+          <div class="vt-dot-col">
+            <div class="vt-dot"></div>
+            <div class="vt-line"></div>
+          </div>
+          <div class="vt-body">
+            <div class="vt-header">
+              <div class="vt-meta">
+                <div class="vt-period">Jun 2568 – Oct 2568 · 4 เดือน</div>
+                <div class="vt-role">UX/UI Designer</div>
+                <div class="vt-company">Intelligence System Corporation Co., Ltd. <span style="font-size:.75rem;opacity:.6">(Enterprise Solutions Provider)</span></div>
+                <div class="vt-badge badge-full">Full Time</div>
+              </div>
+              <div class="vt-expand-btn" aria-label="expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="vt-summary">เริ่มงานในตำแหน่ง UX/UI Designer และขยายบทบาทสู่ Business Analyst, Consultant และ Pre-sales ภายใน 4 เดือนแรก</div>
+            <div class="vt-detail">
+              <ul class="detail-list">
+                <li>ออกแบบ UI ร่วมกับทีม พร้อมขยายบทบาทสู่งาน <strong>Business Analyst</strong> และ <strong>Consultant</strong> ในการเก็บ Requirement</li>
+                <li>รับหน้าที่จัดตั้งบูธใน <strong>Showcase ของพาร์ทเนอร์</strong> และ Consult ลูกค้าที่เข้าเยี่ยมชมโดยตรง</li>
+                <li>นำเสนอ <strong>Warehouse Management System (WMS)</strong> และ <strong>Warehouse Control System (WCS)</strong> ทั้งรูปแบบ Manual, Semi-Automation และ Automation ร่วมกับพาร์ทเนอร์</li>
+                <li>จัดทำ <strong>สื่อการขาย (Pre-sales)</strong> และ Presentation สำหรับผู้บริหาร</li>
+              </ul>
+              <div class="vt-album-section" style="margin-top:20px">
+                <div class="vt-album-label">ผลงานและกระบวนการทำงาน</div>
+                <button class="folder-btn" onclick="openAlbum('insysc-ux-work')">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                  </svg>
+                  <span>กระบวนการทำงาน</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- InSysc BA — MAIN FOCUS -->
+        <div class="vt-item vt-featured" data-modal="job3">
+          <div class="vt-dot-col">
+            <div class="vt-dot dot-featured"></div>
+            <div class="vt-line"></div>
+          </div>
+          <div class="vt-body">
+            <div class="vt-header">
+              <div class="vt-meta">
+                <div class="vt-period">Oct 2568 – ปัจจุบัน</div>
+                <div class="vt-role">Business Analyst &amp; UX/UI Designer</div>
+                <div class="vt-company">Intelligence System Corporation Co., Ltd.</div>
+                <div class="vt-badge badge-current">Current</div>
+              </div>
+              <div class="vt-expand-btn" aria-label="expand">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="vt-summary">ได้รับการโปรโมทเป็น Business Analyst หลังผ่านการทดลองงาน — ดูแลระบบซื้อขายผลผลิตทางการเกษตร End-to-End ในฐานะ BA หลัก ตั้งแต่ Jun 2568</div>
+            <div class="vt-promo-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              Promoted from UX/UI Designer · Oct 2568
+            </div>
+
+            <div class="vt-detail">
+
+              <!-- Project TMK — spotlight -->
+              <div class="project-spotlight">
+                <div class="ps-header">
+                  <div class="ps-icon" id="lottie-tmk" style="width:40px;height:40px"></div>
+                  <div>
+                    <div class="ps-title">Agricultural Trading System (TMK)</div>
+                    <div class="ps-sub">POS &amp; Weight Scale · Enterprise Client</div>
+                  </div>
+                  <div class="ps-badge">Main Project</div>
+                </div>
+
+                <!-- TMK Detailed Timeline -->
+                <div class="tmk-timeline">
+
+                  <div class="tmkp tmkp-done">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">มิถุนายน 2568</div>
+                      <div class="tmkp-title">รับช่วงต่อเพื่อเริ่มต้นโปรเจกต์</div>
+                      <ul class="tmkp-list">
+                        <li>รับ Requirement ต่อจาก PM ผ่านไฟล์ TOR และ Internal Meeting ในช่วงที่ยังไม่มี BA</li>
+                        <li>เริ่มรับผิดชอบออกแบบระบบ (UI Design) ร่วมกับทีม UI 1 ท่าน ในช่วงสัปดาห์ที่ 4 ของเดือน</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tmkp tmkp-done">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">กรกฎาคม – สิงหาคม 2568</div>
+                      <div class="tmkp-title">ออกแบบระบบและเก็บ Requirement</div>
+                      <ul class="tmkp-list">
+                        <li>ออกแบบ UI และจัด Workshop กับลูกค้าผ่าน Weekly Meeting ทุกวันศุกร์ พร้อมอัปเดต Design ในแต่ละ Version ตาม Requirement ที่ได้รับในแต่ละครั้ง</li>
+                        <li>ขับเคลื่อนกระบวนการคิดผ่าน <strong>Design Thinking</strong> โดยร่าง Flow และ Wireframe บนกระดาษ พร้อมวิเคราะห์ Good Case / Worst Case ก่อนออกแบบหน้าจอจริง</li>
+                        <li>เริ่มร่าง SRS และ BRD พร้อมจัดทำ Use Case Diagram, Use Cases และ BPMN Swimlane Flow</li>
+                        <li>ปิดการออกแบบ UI (Cut-off) ได้ภายใน <strong>2 เดือน</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tmkp tmkp-done">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">กันยายน – ตุลาคม 2568</div>
+                      <div class="tmkp-title">จัดทำเอกสาร BRD และ Test Case</div>
+                      <ul class="tmkp-list">
+                        <li>เก็บ Requirement และจัดทำ MOM สรุปทุกการประชุม</li>
+                        <li>เขียน BRD นำเสนอลูกค้าจนได้ยอมรับ</li>
+                        <li>เขียน Test Case ตาม UI Flow และ BRD ให้ลูกค้า Accept เพื่อยืนยันความต้องการก่อนพัฒนา</li>
+                        <li>ทำ Sprint Planning โดยกระจาย Task ตาม Module Assignment ให้ทีม Developer</li>
+                        <li>จัดทำเอกสาร <strong>Master Data Field &amp; Description</strong> ในส่วนการจัดการหลังบ้าน เพื่อเป็นแนวทางให้กับทีม</li>
+                      </ul>
+                      <div class="tmkp-note">UAT รอบแรกเลื่อนเนื่องจากขาด Dev Resource — ใช้โอกาสนี้เก็บ Requirement เพิ่มเติมด้าน Report/Dashboard และส่วนที่ยังไม่ชัดเจน พร้อมจัดทำ Documentation รวบรวมเอกสารและลิงก์อ้างอิง (Figma, Master Data) และร่างเอกสารที่เกี่ยวกับ Non-Functional เช่น API Spec, SRS แทน Dev เพื่อลดเวลาการทำงานของทีม Developer ให้มากที่สุด พร้อม Meeting กับลูกค้าทุกอาทิตย์ เพื่อบริหารความคาดหวังและความน่าเชื่อถือ</div>
+                    </div>
+                  </div>
+
+                  <div class="tmkp tmkp-done">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">พฤศจิกายน – ธันวาคม 2568</div>
+                      <div class="tmkp-title">ส่งมอบเอกสารและเริ่มพัฒนาร่วมกับทีม</div>
+                      <ul class="tmkp-list">
+                        <li>ส่งมอบเอกสารและลิงก์อ้างอิงให้ทีม Developer</li>
+                        <li>Consult และติดตาม Progress ของ Developer (Senior 1 ท่าน, Junior 1 ท่าน) ทุกวัน</li>
+                        <li>เขียน SIT และทดสอบระบบ Module รับซื้อ, ระบบประเมินผล และระบบหลังบ้าน หลัง Dev พัฒนาเสร็จในแต่ละ Sprint</li>
+                        <li>จัดทำ <strong>Lark Automation</strong> เพื่อ Track สถานะงานและส่ง Notification อัตโนมัติเมื่อ Dev ทำ Task เสร็จ ช่วยให้เริ่มทดสอบได้ทันทีโดยไม่ต้องตามงานเอง</li>
+                        <li>จัด Weekly Meeting Update กับลูกค้าต่อเนื่อง</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tmkp tmkp-done">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">มกราคม 2569</div>
+                      <div class="tmkp-title">UAT รอบที่ 1 (7–9 ม.ค.)</div>
+                      <ul class="tmkp-list">
+                        <li>จัดทำ UAT Plan รายวัน ครอบคลุมการทดสอบระบบและฮาร์ดแวร์ทุกสาขา (Weight Scale, กล้อง)</li>
+                        <li>จัดทำ UAT Test Case ตาม Scenario และใบรายชื่อผู้เข้าร่วม</li>
+                        <li>Lead UAT ร่วมกับลูกค้าตลอด 3 วัน</li>
+                        <li>จัดทำ UAT Report สรุป Issue แยกประเภท (Defect, New Feature, CR) พร้อมนำเสนอข้อสรุปในแต่ละเคส จนลูกค้าลงนาม <strong>UAT Sign-off (Acceptance) ผ่าน</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tmkp tmkp-done">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div><div class="tmkp-line"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">มกราคม – กุมภาพันธ์ 2569</div>
+                      <div class="tmkp-title">ดำเนินการต่อหลัง UAT</div>
+                      <ul class="tmkp-list">
+                        <li>สรุป CR Case ร่วมกับทีม จัดทำเอกสาร CR ส่งลูกค้า Sign-Off</li>
+                        <li>เก็บ Requirement และออกแบบการทำงานจาก CR ที่ได้รับหลัง UAT</li>
+                        <li>จัดการ Issue แบบครบวงจร: บันทึก (Log) → ติดตาม (Follow-up) → ทดสอบซ้ำ (Retest) ในส่วนที่ Dev แก้ไขแล้ว ทั้ง Defect และ New Feature</li>
+                        <li>Weekly Meeting Update</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tmkp tmkp-active">
+                    <div class="tmkp-dot-col"><div class="tmkp-dot"></div></div>
+                    <div class="tmkp-body">
+                      <div class="tmkp-period">มีนาคม 2569 – ปัจจุบัน</div>
+                      <div class="tmkp-title">ดำเนินการสู่ UAT รอบที่ 2 และ Go-Live</div>
+                      <ul class="tmkp-list">
+                        <li>อัปเดต <strong>Change Log / Release Notes</strong> ทุกรอบที่แก้ไขเอกสาร (SIT, SRS, BRD) เพื่อการส่งมอบ</li>
+                        <li>ทดสอบระบบเป็นระยะตาม Sprint ที่พัฒนาเสร็จ</li>
+                        <li>จัดประชุม Integration ร่วมกับทีม SAP และ UOB</li>
+                        <li>ประสานงาน Stakeholder เมื่อพบปัญหาระหว่างทดสอบ API ใน UAT และ Production Environment</li>
+                        <li>ปัจจุบันอยู่ระหว่างจัดทำ UAT Plan, UAT Test Case และ User Manual สำหรับ Go-Live</li>
+                        <li>Weekly Meeting พร้อมจัดทำ MOM ทุกสัปดาห์</li>
+                      </ul>
+                      <div class="tmkp-goal">
+                        <div style="font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-600);margin-bottom:8px">Project Plan ปัจจุบัน</div>
+                        <div>UAT รอบที่ 2 : <strong>26 มิถุนายน 2569</strong></div>
+                        <div style="margin-top:4px">Go-Live : <strong>17 กรกฎาคม 2569</strong></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Folder -->
+                <div class="vt-album-section" style="margin-top:20px">
+                  <div class="vt-album-label">ผลงานและกระบวนการทำงาน</div>
+                  <button class="folder-btn" onclick="openAlbum('tmk-work')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                    <span>TMK — กระบวนการทำงาน</span>
+                  </button>
+                  <button class="folder-btn" onclick="openAlbum('tmk-photos')" style="margin-top:8px">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    <span>ประมวลภาพการทำงาน</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Other projects -->
+              <div class="other-projects">
+                <h5 class="op-title">โปรเจกต์อื่นๆ</h5>
+                <div class="op-grid">
+
+                  <!-- Commission -->
+                  <div class="op-card">
+                    <div class="op-header-row">
+                      <div>
+                        <div class="op-status op-delivered">Delivered</div>
+                        <div class="op-name">Commission Display System</div>
+                      </div>
+                      <button class="op-folder" onclick="openAlbum('commission')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                      </button>
+                    </div>
+                    <div class="op-desc">Real-time Commission Tracking Dashboard ครอบคลุม 5 สาขา Department Store รับผิดชอบเก็บ Requirement และออกแบบหน้าจอระบบ จัดทำรายงานเปรียบเทียบ SMS Gateway และประสานงานกับ ThaiBulkSMS โดยตรงเพื่อ Integrate API รองรับการเข้าใช้ผ่านเบอร์โทรศัพท์ ลดเวลาตรวจสอบ Commission จากชั่วโมง → วินาที</div>
+                  </div>
+
+                  <!-- Safety Warehouse -->
+                  <div class="op-card">
+                    <div class="op-header-row">
+                      <div>
+                        <div class="op-status op-poc">Proof of Concept</div>
+                        <div class="op-name">Safety Warehouse Solution</div>
+                      </div>
+                      <button class="op-folder" onclick="openAlbum('safety-wh')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                      </button>
+                    </div>
+                    <div class="op-desc">ออกแบบโซลูชันความปลอดภัยในคลังสินค้าด้วย Aruba BLE และ RFID — <strong>BLE Proximity Detection</strong> ติด BLE Card กับพนักงาน / AP บนรถ Forklift แจ้งเตือนเมื่อเข้าใกล้ · <strong>RFID Aisle Alert</strong> ติด RFID Tags ทุก Aisle สั่ง LED บน Rack เปลี่ยนเป็นสีแดง ประเมินความเป็นไปได้จนพบข้อจำกัดด้านงบและสัญญาณ จึงสรุปไม่เดินหน้าต่อ</div>
+                  </div>
+
+                  <!-- Smart Vision -->
+                  <div class="op-card">
+                    <div class="op-header-row">
+                      <div>
+                        <div class="op-status op-poc">Proof of Concept</div>
+                        <div class="op-name">Smart Vision Camera Solution</div>
+                      </div>
+                      <button class="op-folder" onclick="openAlbum('smart-vision')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                      </button>
+                    </div>
+                    <div class="op-desc">ออกแบบโซลูชันคลังสินค้ากระเบื้องแบบ Lot ติดกล้องอุตสาหกรรมบนงา Forklift เพื่อสแกน QR Code บน Pallet และ Rack สำหรับ Mapping ตำแหน่งจัดเก็บ ช่วยจัดการ Inventory และระบุสถานที่จัดเก็บได้แม่นยำ</div>
+                  </div>
+
+                  <!-- SaaS Laundry -->
+                  <div class="op-card">
+                    <div class="op-header-row">
+                      <div>
+                        <div class="op-status op-paused">On-Going · Paused</div>
+                        <div class="op-name">SaaS Laundry Management</div>
+                      </div>
+                      <button class="op-folder" onclick="openAlbum('saas-laundry')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                      </button>
+                    </div>
+                    <div class="op-desc">In-House SaaS Product ต่อยอดจาก Laundry MA Product เดิม — BA เก็บ Requirement กับ CEO, จัดทำ Scope of Work Phase แรก, ใช้ Claude สร้าง Prototype เพื่อ Cut-off Requirement ก่อนส่งต่อ Designer ปัจจุบัน Pause ชั่วคราวเพื่อจัดลำดับความสำคัญงานลูกค้า</div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Tools & Skills -->
+              <div class="tools-section">
+                <h5 class="op-title">Tools &amp; Skills</h5>
+
+                <div class="skills-block">
+                  <div class="skills-block-title">Hard Skills</div>
+                  <div class="skills-cats">
+                    <div class="skills-row"><span class="tools-cat">Business Analysis</span><span class="tag">SRS</span><span class="tag">BRD</span><span class="tag">SDS</span><span class="tag">Use Case</span><span class="tag">BPMN</span><span class="tag">API Spec</span><span class="tag">ISO 29110</span></div>
+                    <div class="skills-row"><span class="tools-cat">Product Delivery</span><span class="tag">Sprint Planning</span><span class="tag">Backlog Grooming</span><span class="tag">Task Breakdown</span><span class="tag">Timeline &amp; Dependency Tracking</span><span class="tag">Release Notes / Change Log</span></div>
+                    <div class="skills-row"><span class="tools-cat">QA &amp; Testing</span><span class="tag">Test Case Design</span><span class="tag">SIT</span><span class="tag">UAT</span><span class="tag">Defect Management</span></div>
+                    <div class="skills-row"><span class="tools-cat">UX/UI Design</span><span class="tag">Design Thinking</span><span class="tag">Wireframe</span><span class="tag">User Flow</span><span class="tag">Figma</span><span class="tag">FigJam</span><span class="tag">Draw.io</span><span class="tag">Miro</span></div>
+                    <div class="skills-row"><span class="tools-cat">Technical &amp; Integration</span><span class="tag">SAP B1</span><span class="tag">UOB Payment Gateway</span><span class="tag">API Integration</span><span class="tag">SQL</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span></div>
+                    <div class="skills-row"><span class="tools-cat">Automation &amp; AI</span><span class="tag">Lark Automation</span><span class="tag">Claude</span><span class="tag">GitHub Copilot</span><span class="tag">NotebookLM</span></div>
+                  </div>
+                </div>
+
+                <div class="skills-block">
+                  <div class="skills-block-title">Soft Skills</div>
+                  <div class="skills-row"><span class="tag">Stakeholder Management</span><span class="tag">Communication</span><span class="tag">Problem Solving</span><span class="tag">Critical Thinking</span><span class="tag">Negotiation</span><span class="tag">Cross-functional Collaboration</span></div>
+                </div>
+
+                <div class="skills-block">
+                  <div class="skills-block-title">Mindset</div>
+                  <div class="skills-row"><span class="tag">Ownership</span><span class="tag">Proactive</span><span class="tag">Execution-Oriented</span><span class="tag">Growth Mindset</span><span class="tag">Adaptable</span></div>
+                </div>
+              </div>
+
+              <!-- Auto-scroll gallery -->
+              <div class="vt-album-label" style="margin-top:20px">ประมวลภาพการทำงาน</div>
+              <div class="work-gallery-wrap">
+                <div class="work-gallery-track" id="workGalleryTrack">
+                  <img src="work-gallery/1.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/2.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/3.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/4.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/5.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/6.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/7.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/8.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/9.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/10.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/11.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/12.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/13.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/14.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/15.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/16.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <img src="work-gallery/17.jpg" class="wg-img" onclick="openLightbox(this)"/>
+                  <!-- duplicate for seamless loop -->
+                  <img src="work-gallery/1.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/2.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/3.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/4.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/5.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/6.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/7.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/8.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/9.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/10.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/11.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/12.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/13.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/14.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/15.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/16.jpg" class="wg-img" aria-hidden="true"/>
+                  <img src="work-gallery/17.jpg" class="wg-img" aria-hidden="true"/>
+                </div>
+              </div>
+
+              <!-- Future plans -->
+              <div class="future-plan">
+                <div class="fp-header">
+                  <div class="fp-icon"></div>
+                  <div class="fp-title">แผนอนาคต</div>
+                </div>
+                <p class="fp-text">ดิฉันอยากเติบโตในองค์กรที่ได้พัฒนาตัวเองอย่างต่อเนื่อง สิ่งที่ขับเคลื่อนดิฉันคือการได้เห็น User ใช้งานระบบที่ดิฉันออกแบบได้จริง เพราะมันคือเครื่องพิสูจน์ว่าสิ่งที่คิดสร้างคุณค่าได้จริง — และสิ่งเหล่านั้นทำให้ดิฉันภูมิใจในตัวเอง เป็นเหมือนไฟในการทำงาน ดิฉันรักการเรียนรู้สิ่งใหม่ และตั้งใจเติบโตในเส้นทาง Product เพื่อสร้างโซลูชันที่ช่วยให้การทำงานของผู้คนง่ายและมีความหมายมากขึ้น</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── CONTACT ───────────────────────── -->
+<section class="contact-section" id="contact">
+  <video class="contact-bg-video" autoplay muted loop playsinline>
+    <source src="bg-contact2.mp4" type="video/mp4"/>
+  </video>
+  <div class="contact-bg-overlay"></div>
+  <div class="container contact-wrap">
+    <div class="section-label scroll-reveal" style="color:#7dd3fc">Contact</div>
+    <h2 class="section-title scroll-reveal" style="color:#fff">Let's Work Together</h2>
+    <p class="contact-sub scroll-reveal" style="color:rgba(255,255,255,.75)">พร้อมนำศักยภาพที่มีมาเติบโตไปกับ <img src="1moby-logo.png" alt="1Moby" style="height:18px;width:auto;vertical-align:middle;filter:brightness(0) invert(1);opacity:.85;display:inline;margin:0 2px"/> และขับเคลื่อนโซลูชันที่สร้างคุณค่าให้ลูกค้า<br/>เพราะความสำเร็จของลูกค้า คือความสำเร็จของเรา</p>
+    <div class="contact-cards">
+      <a class="contact-card contact-card-float scroll-reveal" style="--sd:.1s" href="mailto:Sujittra.pankaraket@gmail.com">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div class="cc-label">Email</div>
+        <div class="cc-val">Sujittra.pankaraket@gmail.com</div>
+      </a>
+      <a class="contact-card contact-card-float scroll-reveal" style="--sd:.2s" href="tel:+66893569261">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.26 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.17 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+        </div>
+        <div class="cc-label">Phone</div>
+        <div class="cc-val">+66 89 356 9261</div>
+      </a>
+      <a class="contact-card contact-card-float scroll-reveal" style="--sd:.3s" href="https://www.linkedin.com/in/sujittrap168/" target="_blank" rel="noopener">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div class="cc-label">LinkedIn</div>
+        <div class="cc-val">sujittrap168</div>
+      </a>
+      <a class="contact-card contact-card-float scroll-reveal" style="--sd:.4s" href="https://github.com/sujittrapankaraket-sketch" target="_blank" rel="noopener">
+        <div class="cc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <div class="cc-label">GitHub</div>
+        <div class="cc-val">sujittrapankaraket-sketch</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── FOOTER ───────────────────────── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <span class="footer-name">Sujittra Pankaraket</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-applying">Applying for Product Delivery at</span>
+    <img src="1moby-footer.png" alt="1Moby" class="footer-1moby"/>
+  </div>
+</footer>
+
+<!-- ───────────────────────── MODAL ───────────────────────── -->
+<!-- Fullscreen slideshow lightbox -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <div class="lightbox-main">
+    <button class="lb-nav lb-prev" onclick="lbNav(-1)">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+    <button class="lb-nav lb-next" onclick="lbNav(1)">›</button>
+  </div>
+  <div class="lb-counter" id="lbCounter">1 / 1</div>
+  <div class="lb-dots" id="lbDots"></div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
